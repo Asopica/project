@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dgrm.test.service.MyMapper">
+
+	<resultMap type="com.dgrm.test.vo.MyVO" id="boardMap">
+		<id property="b_no" column="b_no"></id>
+		<result property="subject" column="subject"/>
+		<result property="content" column="content"/>
+		<result property="writer" column="writer"/>
+	</resultMap>
+	
+	<select id="getData" resultMap="boardMap">
+		SELECT * FROM BOARD
+	</select>
+	
+	<insert id=""></insert>
+  
+</mapper>
