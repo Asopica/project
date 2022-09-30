@@ -3,6 +3,7 @@ package com.dgrm.test.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.dgrm.test.service.MyServiceImp;
 import com.dgrm.test.vo.MyVO;
 
-
+@Repository
 @RestController
 public class MyController {
 		
